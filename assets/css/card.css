@@ -1,3 +1,28 @@
+/*______________Responsivity Position Card______________*/
+@media screen and (max-device-width: 767px){
+        .team-ui{
+            margin-top: 12% !important; 
+		}
+		.team-back{
+            margin-top: 12% !important; 
+		}
+		.team-exp{
+            margin-top: 12% !important; 
+        }
+}
+
+@media screen and (max-device-width: 991px){
+	.team-back{
+		margin-top: 10% !important; 
+	}
+	.team-exp{
+		margin-top: 10% !important; 
+	}
+}
+
+
+
+
 .card-caption{
         color: #057885 !important;
         margin-left: 10% !important;
