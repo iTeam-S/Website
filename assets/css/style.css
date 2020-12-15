@@ -1,3 +1,17 @@
+/*Product Sans FOnt*/
+
+@font-face{
+  font-family: "Product";
+  src: url(../fonts/PS.ttf) format("ttf");
+}
+
+@font-face{
+  font-family: "Product Light";
+  src: url(../fonts/PSLight.ttf) format("ttf");
+}
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -89,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 .projets-voir{
   margin-top: 70% !important;
   font-weight: bold;
+  font-family: Product !important;
 }
 
 .fa-chevron-right{
@@ -344,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Get Startet Button */
+/* Join Button */
 .join-btn {
   margin-left: 25px;
   color: #fff;
@@ -693,6 +708,7 @@ project-card img {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact .info-box {
   color: #444444;
   text-align: center;
