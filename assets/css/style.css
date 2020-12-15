@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+  
 }
 
 .projets-voir{
@@ -738,4 +739,23 @@ project-card img {
   100% {
     transform: rotate(360deg);
   }
+
+  .description {
+    font-size: 20px;
+  color: #2c4964;
+  font-weight: 700;
+  margin: 10px 0;
 }
+
+  section1 {
+      padding: 2rem;
+    background-color:white;
+    border-style: outset;
+    border-color: gainsboro;
+    border-width: 1px;
+    width: 50%;
+    height: 85%;
+    left: 5%;
+}
+
+
