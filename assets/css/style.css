@@ -1,3 +1,7 @@
+/* site-vitrine : Iteams
+   author : Landris18
+ */
+
 /*Product Sans FOnt*/
 
 @font-face{
@@ -98,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
+  
 }
 
 .projets-voir{
@@ -587,6 +592,105 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+
+
+#com_custom {
+  width: 100%;
+  height: 65vh;
+  background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../img/bg-header_rejoindre.png") center center no-repeat;
+  background-size: cover;
+}
+
+#com_custom .container, #com .container-fluid {
+  padding-top: 84px;
+}
+
+#com_custom h1 {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 64px;
+  color: #fff;
+}
+
+#com_custom h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 10px 0 0 0;
+  font-size: 20px;
+}
+
+#com_custom .btn-project {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: linear-gradient(to left, #057885, #5846f9) !important;
+}
+
+#com_custom .btn-get-started:hover {
+  background: #fff;
+  color: #5846f9;
+}
+
+#com_custom .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (min-width: 1200px) {
+  #com_custom {  
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  #com_custom {
+    text-align: center;
+  }
+  #com_custom .container, #com .container-fluid {
+    padding-top: 68px;
+  }
+  #com_custom .animated {
+    -webkit-animation: none;
+    animation: none;
+  }
+  #com_custom .com-img {
+    text-align: center;
+  }
+  #com_custom .com-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #com_custom h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  #com_custom h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #com_custom .com-img img {
+    width: 60%;
+  }
+}  
+
+@media (max-width: 575px) {
+  #com_custom .com-img img {
+    width: 80%;
+  }
+}
+
+
+
+
 @-webkit-keyframes up-down {
   0% {
     transform: translateY(10px);
@@ -717,6 +821,131 @@ project-card img {
   background: #fff;
 }
 
+.contact .info-box_custom {
+  color: #444444;
+  text-align: left;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 20px 0 30px 0;
+  background: #fff;
+}
+
+.condition {
+  margin-top: 5% !important;
+  margin-left: 12% !important;
+  margin-right: 7% !important;
+}
+
+
+
+.condition ul {
+  font-size: 18px;
+}
+
+.info-p1{
+  margin-top: 7%;
+  font-size: 18px;
+}
+.info-p2{
+  font-size: 18px;
+}
+
+/* Poste dispo________________________________________________________*/
+.rechercher{
+  margin-top: 12%;
+}
+
+#recherche	
+{ 
+	position:relative; 
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+  #recherche input 
+  {
+	font-size:16px;
+	padding:10px 10px 10px 5px;
+	display:block;
+	width:200px;
+	border:none;
+	border-bottom:1px solid #757575;
+  }
+  #recherche label {
+	color:#999; 
+	font-size:16px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	left:5px;
+	top:10px;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+  }
+  
+  #recherche input:focus ~ label, #recherche input:valid ~ #recherche label 
+  {
+	top:-30px;
+	font-size:14px;
+  color:#057885;
+  border: none;
+  }
+  
+  #voir{
+    margin-left:45% ;
+    border: none;
+    color: white;
+    background-color: #057885;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+
+
+/* Upload cv__________________________________________________________*/
+.cv-upload{
+  margin-top: 8% ;
+  margin-bottom: 5.5%;
+}
+
+.cv-send{
+  padding: 12px !important;
+  margin-left: 2%;
+  border: none;
+  color: white;
+  background-color: #057885;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 18px;
+  color: #222;
+  background-color: white;
+  padding: 12px !important;
+  border-radius: 5px;
+  border: 1px solid #bbbfc0;
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  color: #ffffff;
+  background-color: #5c6263;
+  transition-duration: 1s;
+}
+
 .contact .info-box i {
   font-size: 60px;
   color: #057885;
@@ -755,3 +984,22 @@ project-card img {
     transform: rotate(360deg);
   }
 }
+  .description {
+  font-size: 20px;
+  color: #2c4964;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+  section1 {
+      padding: 2rem;
+    background-color:white;
+    border-style: outset;
+    border-color: gainsboro;
+    border-width: 1px;
+    width: 50%;
+    height: 85%;
+    left: 5%;
+}
+
+
