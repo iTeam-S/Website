@@ -1,0 +1,183 @@
+
+/* générale */
+@font-face{
+  font-family: "Product";
+  src: url(../fonts/PS.ttf) format("ttf");
+}
+
+@font-face{
+  font-family: "Product Light";
+  src: url(../fonts/PSLight.ttf) format("ttf");
+}
+body {
+  font-family: Poppins, sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #0e0e0f; /*fff voila le chiffre hexadecimal du couleur mais j'ai mis le noir pour que ce soit visible parcequ'il y a pas de font */
+}
+
+h1, h3,  {
+  font-family: "Poppins", sans-serif;
+}
+
+.iteam-text-logo{
+  font-size: 17px !important;
+  text-transform: none;
+}
+header{
+  border: 1px solid blue;
+  padding-right:2em;
+}
+nav {
+  padding: 0; margin: 0;
+  text-align: center; /* centrer le texte */
+}
+nav li {
+  display: inline;
+  list-style: none;
+}
+nav a {
+  display:inline-block;
+  margin: 0 20px;
+  text-decoration:none;
+}
+.navigation-generale{
+  margin-left:33em;
+  margin-top:1.2em;
+ margin-bottom: 11em
+}
+.nav-accueil{
+  opacity:0.5;
+}
+.nav-accueil:hover{
+  opacity:1;
+}
+.nav-membre{
+  opacity:0.5;
+}
+.nav-membre:hover{
+  opacity: 1;
+}
+.join-btn {
+  margin-left: 25px;
+  color: #0e0e0f; /* remplacer le chiffre héxadecimal par #fff*/
+  border-radius: 5px;
+  padding: 6px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  border: 2px solid black;
+  position:absolute;
+  right:2em;
+  top:1.5em;
+  text-decoration: none;
+  
+}
+
+.join-btn:hover {
+  border-color:#fff;
+  color: #fff;
+
+}
+.logo-mr-auto .iteam-text-logo{
+  position:absolute;
+  left:7em;
+  top:1.5em;
+}
+.img-fluid{
+  position:absolute;
+  top:3em
+}
+.petit-presentation{
+  position:absolute;
+  left:9em;
+  top:4em;
+}
+.navigation-projet{
+  margin-right:55em;
+}
+.tous-les-projets{
+  text-decoration:underline ;
+}
+.en-cours{
+  opacity:0.5;
+}
+.en-cours:hover{
+  opacity:1;
+  text-decoration: underline;
+}
+.terminees{
+  opacity:0.5;
+}
+.terminees:hover{
+  opacity:1;
+  text-decoration: underline;
+}
+.table-project{
+  border-radius:5px;
+  border:2px outset grey;
+  left: 30px;
+  bottom: 70px;
+  font-size: 13px;
+  color: #0e0ef;
+  box-shadow: 1px 1px 0px 0px
+ 
+}
+.etat-du-projet1
+{
+  position:absolute;
+  left:18em;
+  top:26.3em;
+   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+ 
+  transition: all linear 0.25s;
+  color: #da76e5;
+}
+
+.etat-du-projet2{
+   position:absolute;
+  left:42.9em;
+  top:26.3em;
+   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
+  color: #da76e5;
+  transition: all linear 0.25s;
+}
+.etat-du-projet3{
+   position:absolute;
+  left:68em;
+  top:26.3em;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  color:#da76e5;
+  transition: all linear 0.25s;
+}
+.projet-detaille1{
+  text-decoration:none;
+  color:#85b181;
+  font-weight: bold;
+  position:absolute;
+  left:17em;
+  top:34em;
+}
+.projet-detaille2{
+  text-decoration: none;
+  color:#85b181;
+  font-weight: bold;
+  position:absolute;
+  top:34em;
+  left:41em;
+}
+.projet-detaille3{
+  text-decoration: none;
+  color:#85b181;
+  font-weight: bold;
+  position:absolute;
+  top:34em;
+  left:65em;
+}
+h3{
+  margin-left:2em;
+}
