@@ -29,10 +29,13 @@ h1, h3,  {
 header{
   border: 1px solid blue;
   padding-right:2em;
+  background-image: url("assets/img/nav.jpeg");
+  color: #d2e1e9;
 }
-nav {
+nav { /* changé le couleur en #fff pour le nav */
   padding: 0; margin: 0;
   text-align: center; /* centrer le texte */
+  
 }
 nav li {
   display: inline;
@@ -42,27 +45,17 @@ nav a {
   display:inline-block;
   margin: 0 20px;
   text-decoration:none;
+  
 }
 .navigation-generale{
   margin-left:33em;
   margin-top:1.2em;
- margin-bottom: 11em
-}
-.nav-accueil{
-  opacity:0.5;
-}
-.nav-accueil:hover{
-  opacity:1;
-}
-.nav-membre{
-  opacity:0.5;
-}
-.nav-membre:hover{
-  opacity: 1;
+ margin-bottom: 11em;
+  color: #0e0ef
 }
 .join-btn {
   margin-left: 25px;
-  color: #0e0e0f; /* remplacer le chiffre héxadecimal par #fff*/
+  color: #fff; /* remplacer le chiffre héxadecimal par #fff*/
   border-radius: 5px;
   padding: 6px 25px 8px 25px;
   white-space: nowrap;
@@ -87,6 +80,7 @@ nav a {
   position:absolute;
   left:7em;
   top:1.5em;
+  color: #d2e1e9;
 }
 .img-fluid{
   position:absolute;
@@ -99,6 +93,7 @@ nav a {
 }
 .navigation-projet{
   margin-right:55em;
+  
 }
 .tous-les-projets{
   text-decoration:underline ;
@@ -130,8 +125,8 @@ nav a {
 .etat-du-projet1
 {
   position:absolute;
-  left:18em;
-  top:26.3em;
+  left:20em;
+  top:37em;
    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
  
   transition: all linear 0.25s;
@@ -140,16 +135,16 @@ nav a {
 
 .etat-du-projet2{
    position:absolute;
-  left:42.9em;
-  top:26.3em;
+  left:45em;
+  top:37em;
    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); 
   color: #da76e5;
   transition: all linear 0.25s;
 }
 .etat-du-projet3{
    position:absolute;
-  left:68em;
-  top:26.3em;
+  left:70em;
+  top:37em;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   color:#da76e5;
   transition: all linear 0.25s;
@@ -160,14 +155,14 @@ nav a {
   font-weight: bold;
   position:absolute;
   left:17em;
-  top:34em;
+  top:45.5em;
 }
 .projet-detaille2{
   text-decoration: none;
   color:#85b181;
   font-weight: bold;
   position:absolute;
-  top:34em;
+  top:45.5em;
   left:41em;
 }
 .projet-detaille3{
@@ -175,9 +170,13 @@ nav a {
   color:#85b181;
   font-weight: bold;
   position:absolute;
-  top:34em;
+  top:45.5em;
   left:65em;
 }
 h3{
   margin-left:2em;
+  margin-top:10px;
+}
+.nav-accueil{
+  color: rgb(210,225,233);
 }
