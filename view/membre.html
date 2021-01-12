@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
@@ -201,7 +201,7 @@
       },
       methods: {
         async getData () {
-          const res = await fetch('http://iteam-s.gaetanbot.xyz/membres');
+          const res = await fetch('https://iteam-s.gaetanbot.xyz/membres');
           const data = await res.json();
           this.data = data;
         }
