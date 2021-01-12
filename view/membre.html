@@ -72,272 +72,32 @@
 
 
 <section id="team" class="team">
-<div class="container-fluid">
+<div v-for="dt in data" class="container-fluid">
 <div class="text-center">
   <div class="row">
     <div class="col-md-3"  style=" border-left: 4px solid #4d4dff; height: 120px; display: inline-block;">
 
       <!-- ======= EQUIPE UI/UX Section ======= -->
-      <h4>Equipe UI/UX</h4>
-      <span>description de l'équipe Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+      <h4>{{dt.nom}}</h4>
+      <span v-for="m in dt.missions">{{m.mission}}</span>
     </div>
-              <div class="col-xl-2 col-sm-2 mb-2 offset-md-1">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Tonny Herison</h6><span>Responsable</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" target="_blank" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-                <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-2.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Landry</h6><span>Responsable</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-                 <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-3.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Xavier Emmanuel</h6><span>Développeur</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
 
-                 <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-4.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Abel Smith</h6><span>Développeur</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-
-                <div class="col-xl-2 col-sm-2 mb-2 offset-md-4">
-                      <div class="bg-white rounded shadow-sm py-2 px-2" ><img src="../assets/img/team/UI/team-5.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                          <h6 class="mb-0">Charla Masy</h6><span>Développeuse</span>
-                          <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                              <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                          </ul>
-                      </div>
-                  </div><!-- End -->
-                  <div class="col-xl-2 col-sm-2 mb-2">
-                      <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-6.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                          <h6 class="mb-0">Hasintso</h6><span>Développeur</span>
-                          <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                              <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                          </ul>
-                      </div>
-                  </div><!-- End -->
-                  <div class="col-xl-2 col-sm-2 mb-2">
-                      <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-7.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                          <h6 class="mb-0">Hajatiana Sitraka</h6><span>Développeur</span>
-                          <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                              <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                          </ul>
-                      </div>
-                  </div><!-- End -->
+    <div v-for="l in dt.membres" class="col-xl-2 col-sm-2 mb-2">
+      <div class="bg-white rounded shadow-sm py-2 px-2"><img v-bind:src="l.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
+          <h6 class="mb-0">{{l.nom}}</h6><span>{{l.nom_poste}}</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" target="_blank" class="social-link"><i class="icofont-facebook"></i></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
+          </ul>
+      </div>
+    </div><!-- End -->
+              
 
        </div>
-    </div> 
+    </div>
+    <br><br><br><br>
  </div>  <!-- =======END EQUIPE UI/UX Section ======= -->
-<br><br><br><br>
-<!-- ======= EQUIPE BACK OFFICE Section ======= -->
-        <div class="container-fluid">
-        <div class="text-center">
-          <div class="row">
-            <div class="col-md-3"  style=" border-left: 4px solid #ffcccc; height: 120px; display: inline-block;">
-              <h4> Equipe Back Office</h4>
-              <span>description de l'équipe Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-            </div>
-              <div class="col-xl-2 col-sm-2 mb-2 offset-md-1">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Back/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Manambintsoa</h6><span>Responsable</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-                <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Back/team-2.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Salema</h6><span>Développeuse</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-                 <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Back/team-3.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Dominick</h6><span>Développeur</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
 
-                 <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Back/team-4.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Angela</h6><span>Développeuse</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-
-                <div class="col-xl-2 col-sm-2 mb-2 offset-md-4">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Back/team-5.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Nazirah Didier</h6><span>Développeuse</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-
-                <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Back/team-6.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Darcia</h6><span>Développeuse</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-              </div>
-        </div> 
-        </div>  <!-- =======END EQUIPE BACK OFFICE Section ======= -->
-
-<br><br><br><br>
-<!-- ======= EQUIPE QUALITE ET EXPLOITATION Section ======= -->
-        <div class="container-fluid">
-        <div class="text-center">
-          <div class="row">
-            <div class="col-md-3"  style=" border-left: 4px solid #aa80ff; height: 120px; display: inline-block;">              <h4> Equipe Qualité et Exploitation</h4>
-              <span>description de l'équipe Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-            </div>
-              <div class="col-xl-2 col-sm-2 mb-2 offset-md-1">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/QE/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Gaetan Jonathan</h6><span>Responsable</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-                <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/QE/team-2.png" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Fabien Julio</h6><span>Responsabilité</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-                 <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/QE/team-3.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Rivo Lalaina</h6><span>Responsabilité</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-
-                 <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/QE/team-4.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Melchia Liantsoa</h6><span>Responsabilité</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-
-                <div class="col-xl-2 col-sm-2 mb-2 offset-md-4">
-                      <div class="bg-white rounded shadow-sm py-2 px-2" ><img src="../assets/img/team/QE/team-5.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                          <h6 class="mb-0">Jonquille Sonia</h6><span>Responsabilité</span>
-                          <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                              <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                          </ul>
-                      </div>
-                  </div><!-- End -->
-              </div>
-        </div> 
-        </div>  <!-- =======END EQUIPE QUALITE ET EXPLOITATION Section ======= -->
-
-<br><br><br><br>
-<!-- ======= EQUIPE ADMINISTRATION Section ======= -->
-        <div class="container-fluid">
-        <div class="text-center">
-          <div class="row">
-            <div class="col-md-3"  style=" border-left: 4px solid #bedbbd; height: 120px; display: inline-block;">
-              <h4> Equipe Administration</h4>
-              <span>description de l'équipe Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
-            </div>
-              <div class="col-xl-2 col-sm-2 mb-2 offset-md-1">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Admin/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Rojo Valisoa</h6><span>Admin</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-                <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Admin/team-2.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Miarana Dewa</h6><span>Responsabilité</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-                 <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Admin/team-3.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Princia</h6><span>Responsabilité</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-
-                 <div class="col-xl-2 col-sm-2 mb-2">
-                    <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/Admin/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                        <h6 class="mb-0">Fabiola</h6><span>Responsabilité</span>
-                        <ul class="social mb-0 list-inline mt-3">
-                          <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                        </ul>
-                    </div>
-                </div><!-- End -->
-
-                <div class="col-xl-2 col-sm-2 mb-2 offset-md-4">
-                      <div class="bg-white rounded shadow-sm py-2 px-2" ><img src="../assets/img/team/Admin/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-                          <h6 class="mb-0">Tsiory</h6><span>Responsabilité</span>
-                          <ul class="social mb-0 list-inline mt-3">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-                              <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-                          </ul>
-                      </div>
-                  </div><!-- End -->
-              </div>
-        </div> 
-        </div>  <!-- =======END EQUIPE ADMINISTRATION Section ======= -->
 
 
 
@@ -352,7 +112,7 @@
   <div class="footer-top ">
     <div class="container">
       <div class="row">
-
+        
         <div class="col-lg-3 col-md-6 footer-contact">
           <h3 style="font-family: Product;">iTeam-$</h3>
           <p>
@@ -429,6 +189,25 @@
   <script src="../assets/vendor/venobox/venobox.min.js"></script>
   <script src="../assets/vendor/aos/aos.js"></script>
   <script src="../assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script>
+    var app = new Vue({
+      el: '#team',
+      data (){
+          return { data: null }
+      },
+      beforeMount(){
+        this.getData();
+      },
+      methods: {
+        async getData () {
+          const res = await fetch('http://iteam-s.gaetanbot.xyz/membres');
+          const data = await res.json();
+          this.data = data;
+        }
+      }
+    })
+  </script>
 
 
 </body>
