@@ -84,7 +84,7 @@
 
     <div v-for="(l, idx) in dt.membres" class="col-xl-2 col-sm-2 mb-2" :class="{'offset-md-4' : idx%4==0 && idx!=0}">
       <div class="bg-white rounded shadow-sm py-2 px-2"><img v-bind:src="l.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-          <h6 class="mb-0">{{l.nom}}</h6><span>{{l.nom_poste}}</span>
+          <h6 v-bind:title="l.nom_complet" class="mb-0">{{l.prenom_usuel}}</h6><span>{{l.nom_poste}}</span>
           <ul class="social mb-0 list-inline mt-3">
             <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" target="_blank" class="social-link"><i class="icofont-facebook"></i></i></a></li>
               <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
