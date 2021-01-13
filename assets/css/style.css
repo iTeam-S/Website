@@ -974,6 +974,7 @@ project-card img {
   height: 100%;
   position: relative;
   margin-top: 6%;
+  margin-left: 10% !important;
 
 }
 
