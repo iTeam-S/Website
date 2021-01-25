@@ -5,12 +5,12 @@
 /*Product Sans FOnt*/
 
 @font-face{
-  font-family: "Product";
+  font-family: "ps";
   src: url(../fonts/PS.ttf) format("ttf");
 }
 
 @font-face{
-  font-family: "Product Light";
+  font-family: "ps Light";
   src: url(../fonts/PSLight.ttf) format("ttf");
 }
 
