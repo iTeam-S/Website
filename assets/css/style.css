@@ -2,67 +2,17 @@
    author : Landris18
  */
 
-/*Product Sans Fonts*/
+/*Product Sans FOnt*/
 
 @font-face{
-  font-family: "Product Sans";
-  src: url(../fonts/Product\ Sans\ Regular.ttf) format("ttf");
+  font-family: "Product";
+  src: url(../fonts/PS.ttf) format("ttf");
 }
 
 @font-face{
   font-family: "Product Light";
   src: url(../fonts/PSLight.ttf) format("ttf");
 }
-
-
-
-
-/*--------------------------------------------------
-#Using the Product Sans Font-family
--------------------------------------------------*/
-.text-join{
-  font-family: Product Sans;
-}
-
-.list-exp{
-  font-family: Product Sans;
-  font-size: 16px !important;
-}
-
-.newsl{
-  font-family: Product Sans;
-  font-size: 16px !important;
-}
-
-.rechercher{
-  color: #057885 !important;
-  font-family: Product Sans !important;
-}
-
-.nom_poste{
-  font-family: Product Sans !important;
-}
-.poste_dispo{
-  font-family: Product Sans !important;
-}
-.poste_dispo_title{
-  color: #057885; 
-  font-weight: 500; 
-  font-family: Product Sans !important; 
-  margin-top:8% ; 
-  margin-left: 10%
-}
-
-.poste_dispo_text{
-  font-family: Product Sans !important; 
-  margin-left: 7%; 
-  font-size:16px
-}
-
-.condition_ad{
-  font-family: Product Sans !important;
-}
-
 
 
 
@@ -158,9 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 .projets-voir{
   margin-top: 70% !important;
   font-weight: bold;
-  color: #057885 !important; 
-  font-size: 17px; 
-  font-family: Product Sans !important;
+  font-family: Product !important;
 }
 
 .fa-chevron-right{
@@ -561,7 +509,8 @@ h1, h2, h3, h4, h5, h6 {
 #com .bgmembre {
   width: 100%;
   height: 100vh;
-  background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../../assets/img/bgmembre.jpg") center center no-repeat;
+
+background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../../assets/img/bgmembre.jpg") center center no-repeat;
   background-size: cover;
 
 }
@@ -584,7 +533,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #com .btn-project {
-  font-family: Product Sans !important;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -750,102 +699,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-#com_custom_membre {
-  width: 100%;
-  height: 65vh;
-  background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../img/bgmembre.jpg") center center no-repeat;
-  background-size: cover;
-}
-
-#com_custom_membre .container, #com .container-fluid {
-  padding-top: 84px;
-}
-
-#com_custom_membre h1 {
-  margin: 0;
-  font-size: 52px;
-  font-weight: 600;
-  line-height: 64px;
-  color: #fff;
-}
-
-#com_custom_membre h2 {
-  color: rgba(255, 255, 255, 0.8);
-  margin: 10px 0 0 0;
-  font-size: 20px;
-}
-
-#com_custom_membre .btn-project {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px;
-  border-radius: 5px;
-  transition: 0.5s;
-  margin-top: 30px;
-  color: #fff;
-  background: linear-gradient(to left, #057885, #5846f9) !important;
-}
-
-#com_custom_membre .btn-get-started:hover {
-  background: #fff;
-  color: #5846f9;
-}
-
-#com_custom_membre .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
-}
-
-@media (min-width: 1200px) {
-  #com_custom_membre {  
-    background-attachment: fixed;
-  }
-}
-
-@media (max-width: 991px) {
-  #com_custom_membre {
-    text-align: center;
-  }
-  #com_custom_membre .container, #com .container-fluid {
-    padding-top: 68px;
-  }
-  #com_custom_membre .animated {
-    -webkit-animation: none;
-    animation: none;
-  }
-  #com_custom_membre .com-img {
-    text-align: center;
-  }
-  #com_custom_membre .com-img img {
-    width: 50%;
-  }
-}
-
-@media (max-width: 768px) {
-  #com_custom_membre h1 {
-    font-size: 26px;
-    line-height: 36px;
-  }
-  #com_custom_membre h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  #com_custom_membre .com-img img {
-    width: 60%;
-  }
-}  
-
-@media (max-width: 575px) {
-  #com_custom_membre .com-img img {
-    width: 80%;
-  }
-}
-
-
-
-
 @-webkit-keyframes up-down {
   0% {
     transform: translateY(10px);
@@ -974,7 +827,6 @@ project-card img {
   height: 100%;
   position: relative;
   margin-top: 6%;
-
 }
 
 #team .container-fluid {
@@ -983,7 +835,7 @@ project-card img {
 
 #team h6 {
 
-      font-weight: 600;
+    font-weight: 600;
     margin-bottom: 5px;
     font-size: 15px;
     color: #2f4d5a;
@@ -1032,13 +884,6 @@ project-card img {
 # Contact
 --------------------------------------------------------------*/
 
-.section-title h2, .section-title h3{
-  text-transform: none; 
-  font-weight: normal; 
-  font-size: 22px; 
-  font-family: Product Sans !important;
-}
-
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1070,11 +915,9 @@ project-card img {
 .info-p1{
   margin-top: 7%;
   font-size: 18px;
-  font-family: Product Sans !important;
 }
 .info-p2{
   font-size: 18px;
-  font-family: Product Sans !important;
 }
 
 /* Poste dispo________________________________________________________*/
@@ -1136,11 +979,6 @@ project-card img {
   margin-bottom: 5.5%;
 }
 
-.upload-file{
-  font-family: Product Sans !important;
-  font-size: 17px !important;
-}
-
 .cv-send{
   padding: 12px !important;
   margin-left: 2%;
@@ -1149,7 +987,6 @@ project-card img {
   background-color: #057885;
   border-radius: 5px;
   font-size: 16px;
-  font-family: Product Sans !important;
 }
 
 .inputfile {
@@ -1245,10 +1082,6 @@ project-card img {
   font-size: 14px;
   background: linear-gradient(45deg, #0e0f10f0 0%, #0e1111 100%), url("../img/bg-header.jpg") center center no-repeat;
   background-size: cover;
-}
-
-.footer-contact h3{
-  font-family: Product Sans !important;
 }
 
 #footer .footer-top {
