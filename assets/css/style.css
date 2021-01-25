@@ -2,67 +2,17 @@
    author : Landris18
  */
 
-/*Product Sans Fonts*/
+/*Product Sans FOnt*/
 
 @font-face{
-  font-family: "Product Sans";
-  src: url(../fonts/Product\ Sans\ Regular.ttf) format("ttf");
+  font-family: "Product";
+  src: url(../fonts/PS.ttf) format("ttf");
 }
 
 @font-face{
   font-family: "Product Light";
   src: url(../fonts/PSLight.ttf) format("ttf");
 }
-
-
-
-
-/*--------------------------------------------------
-#Using the Product Sans Font-family
--------------------------------------------------*/
-.text-join{
-  font-family: Product Sans;
-}
-
-.list-exp{
-  font-family: Product Sans;
-  font-size: 16px !important;
-}
-
-.newsl{
-  font-family: Product Sans;
-  font-size: 16px !important;
-}
-
-.rechercher{
-  color: #057885 !important;
-  font-family: Product Sans !important;
-}
-
-.nom_poste{
-  font-family: Product Sans !important;
-}
-.poste_dispo{
-  font-family: Product Sans !important;
-}
-.poste_dispo_title{
-  color: #057885; 
-  font-weight: 500; 
-  font-family: Product Sans !important; 
-  margin-top:8% ; 
-  margin-left: 10%
-}
-
-.poste_dispo_text{
-  font-family: Product Sans !important; 
-  margin-left: 7%; 
-  font-size:16px
-}
-
-.condition_ad{
-  font-family: Product Sans !important;
-}
-
 
 
 
@@ -158,9 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 .projets-voir{
   margin-top: 70% !important;
   font-weight: bold;
-  color: #057885 !important; 
-  font-size: 17px; 
-  font-family: Product Sans !important;
+  font-family: Product !important;
 }
 
 .fa-chevron-right{
@@ -561,7 +509,8 @@ h1, h2, h3, h4, h5, h6 {
 #com .bgmembre {
   width: 100%;
   height: 100vh;
-  background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../../assets/img/bgmembre.jpg") center center no-repeat;
+
+background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../../assets/img/bgmembre.jpg") center center no-repeat;
   background-size: cover;
 
 }
@@ -594,7 +543,7 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
 }
 
 #com .btn-project {
-  font-family: Product Sans !important;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -756,7 +705,6 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
     width: 80%;
   }
 }
-
 
 
 
@@ -947,7 +895,6 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
     width: 80%;
   }
 }
-
 
 
 
@@ -1160,8 +1107,6 @@ float : right;
   height: 100%;
   position: relative;
   margin-top: 6%;
-  margin-left: 10% !important;
-
 }
 
 #team .container-fluid {
@@ -1170,7 +1115,7 @@ float : right;
 
 #team h6 {
 
-      font-weight: 600;
+    font-weight: 600;
     margin-bottom: 5px;
     font-size: 15px;
     color: #2f4d5a;
@@ -1219,13 +1164,6 @@ float : right;
 # Contact
 --------------------------------------------------------------*/
 
-.section-title h2, .section-title h3{
-  text-transform: none; 
-  font-weight: normal; 
-  font-size: 22px; 
-  font-family: Product Sans !important;
-}
-
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1257,11 +1195,9 @@ float : right;
 .info-p1{
   margin-top: 7%;
   font-size: 18px;
-  font-family: Product Sans !important;
 }
 .info-p2{
   font-size: 18px;
-  font-family: Product Sans !important;
 }
 
 /* Poste dispo________________________________________________________*/
@@ -1323,11 +1259,6 @@ float : right;
   margin-bottom: 5.5%;
 }
 
-.upload-file{
-  font-family: Product Sans !important;
-  font-size: 17px !important;
-}
-
 .cv-send{
   padding: 12px !important;
   margin-left: 2%;
@@ -1336,7 +1267,6 @@ float : right;
   background-color: #057885;
   border-radius: 5px;
   font-size: 16px;
-  font-family: Product Sans !important;
 }
 
 .inputfile {
@@ -1432,10 +1362,6 @@ float : right;
   font-size: 14px;
   background: linear-gradient(45deg, #0e0f10f0 0%, #0e1111 100%), url("../img/bg-header.jpg") center center no-repeat;
   background-size: cover;
-}
-
-.footer-contact h3{
-  font-family: Product Sans !important;
 }
 
 #footer .footer-top {

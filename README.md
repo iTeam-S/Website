@@ -1,3 +1,3 @@
-# Site-vitrine de iTeam-$
+# site-vitrine de iTeam-$
 
 Pas encore fonctionnel mais consultable sur iteam-s.github.io
