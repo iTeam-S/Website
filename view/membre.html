@@ -85,8 +85,8 @@
       <div class="bg-white rounded shadow-sm py-2 px-2"><img v-bind:src="l.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
           <h6 v-bind:title="l.nom_complet" class="mb-0">{{l.prenom_usuel}}</h6><span>{{l.nom_poste}}</span>
           <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a href="https://www.facebook.com/Rafarlah/" target="_blank" class="social-link"><i class="icofont-facebook"></i></i></a></li>
-              <li class="list-inline-item"><a href="https://www.linkedin.com/in/sitraka-hajatiana-5229301ab/" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
+            <li class="list-inline-item"><a v-bind:href="facebook(l.facebook)" target="_blank" class="social-link"><i class="icofont-facebook"></i></i></a></li>
+              <li class="list-inline-item"><a v-bind:href="l.Linkedin" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
           </ul>
       </div>
     </div><!-- End -->
@@ -190,7 +190,8 @@
   <script src="../assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   <script>
-    var app = new Vue({
+    var app = new Vue(
+    {
       el: '#team',
       data (){
           return { data: null }
@@ -203,8 +204,12 @@
           const res = await fetch('https://iteam-s.gaetanbot.xyz/membres');
           const data = await res.json();
           this.data = data;
-        }
-      }
+        },
+        facebook (lien) {
+          let url ="https://facebook.com";
+          return url + lien;        
+         }
+       }
     })
   </script>
 
