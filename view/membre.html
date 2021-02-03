@@ -12,7 +12,7 @@
   <!-- Favicons -->
   <link href="../assets/img/LOGO.png" rel="icon">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -85,7 +85,7 @@
       <div class="bg-white rounded shadow-sm py-2 px-2"><img v-bind:src="l.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
           <h6 v-bind:title="l.nom_complet" class="mb-0">{{l.prenom_usuel}}</h6><span>{{l.nom_poste}}</span>
           <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a v-bind:href="facebook(l.facebook)" target="_blank" class="social-link"><i class="icofont-facebook"></i></i></a></li>
+            <li class="list-inline-item"><a v-bind:href="facebook(l.facebook)" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
               <li class="list-inline-item"><a v-bind:href="l.Linkedin" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
           </ul>
       </div>
@@ -102,7 +102,6 @@
 
 </section>
   
-</main><!-- End #main -->
 
 
 <!-- ======= Footer ======= -->
@@ -147,7 +146,7 @@
         <div class="col-lg-4 col-md-6 footer-newsletter">
           <h4>Réjoignez notre Newsletter</h4>
           <p>Recevoir continuellement des informations concernant la communauté</p>
-          <form action="" method="post">
+          <form method="post">
             <input type="email" name="email"><input type="submit" value="S'inscrire">
           </form>
         </div>
