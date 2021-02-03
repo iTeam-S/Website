@@ -2,17 +2,20 @@
    author : Landris18
  */
 
-/*Product Sans FOnt*/
+/*Product Sans Font*/
 
 @font-face{
-  font-family: "ps";
+  font-family: "product";
   src: url(../fonts/PS.ttf) format("ttf");
 }
 
 @font-face{
-  font-family: "ps Light";
+  font-family: "product Light";
   src: url(../fonts/PSLight.ttf) format("ttf");
 }
+
+
+/*Application de font product*/
 
 
 
@@ -108,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 .projets-voir{
   margin-top: 70% !important;
   font-weight: bold;
-  font-family: ps !important;
+  font-size: 15px !important;
 }
 
 .fa-chevron-right{
@@ -509,8 +512,7 @@ h1, h2, h3, h4, h5, h6 {
 #com .bgmembre {
   width: 100%;
   height: 100vh;
-
-background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../../assets/img/bgmembre.jpg") center center no-repeat;
+  background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../../assets/img/bgmembre.jpg") center center no-repeat;
   background-size: cover;
 
 }
@@ -543,7 +545,6 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
 }
 
 #com .btn-project {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -711,7 +712,7 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
 #com_custom_membre {
   width: 100%;
   height: 65vh;
-  background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../img/bgmembre.jpg") center center no-repeat;
+  background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 214, 0.9) 100%),*/ url("../img/bg-header.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -916,6 +917,7 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
   }
 }
 
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -1033,7 +1035,7 @@ project-card img {
 .menuprojets a{
   position: relative;
   margin: 0 20px;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   color: #2f4d5a;
   text-decoration: none;
@@ -1194,11 +1196,12 @@ float : right;
 
 .info-p1{
   margin-top: 7%;
-  font-size: 18px;
+  font-size: 15px;
 }
 .info-p2{
-  font-size: 18px;
+  font-size: 15px;
 }
+
 
 /* Poste dispo________________________________________________________*/
 .rechercher{
@@ -1266,7 +1269,8 @@ float : right;
   color: white;
   background-color: #057885;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: Poppins;
 }
 
 .inputfile {
@@ -1445,6 +1449,11 @@ float : right;
   position: relative;
   padding-bottom: 12px;
 }
+
+#footer .footer-newsletter p {
+  font-size: 13px;
+}
+
 
 #footer .footer-newsletter form {
   margin-top: 30px;
