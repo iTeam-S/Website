@@ -15,10 +15,6 @@
 }
 
 
-/*Application de font product*/
-
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -546,7 +542,7 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
 
 #com .btn-project {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px;
@@ -918,6 +914,11 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
 }
 
 
+/*Voir*/
+.voir{
+  cursor: pointer !important;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -962,6 +963,7 @@ section {
   cursor: pointer;
   border-radius: 10px;
   font-family: Poppins;
+  transition-duration: 1s;
 }
 
 .project-card .project-name {
@@ -984,7 +986,7 @@ section {
   transition: all linear 0.25s;
 }
 
-project-card img {
+.project-card img {
   transition: all linear 0.25s;
 }
 
@@ -1006,15 +1008,27 @@ project-card img {
   color: #FFF;
   font-size: 13px;
   transition: all linear 0.25s;
+}
+
+.project-card:hover {
+  transition-duration: 1s;
+  transform:scale(1.1) !important;
+}
+.project-card img {
+  transition-duration: 2s;
 }
 
 .project-card:hover img {
-  filter: grayscale(50);
-  transition-duration: 3s;
+  transition-duration: 1s;
+  transform:scale(1.5) !important;
 }
 
 .project-name{
   margin-bottom: 15% !important;
+}
+
+.card-description{
+  font-size: 13.5px !important;
 }
 
 /*--------------------------------------------------------------
