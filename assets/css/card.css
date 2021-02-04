@@ -1,5 +1,5 @@
 /*______________Responsivity Position Card______________*/
-@media screen and (max-device-width: 767px){
+@media screen and (max-width: 767px){
         .team-ui{
             margin-top: 12% !important; 
 		}
@@ -11,7 +11,7 @@
         }
 }
 
-@media screen and (max-device-width: 991px){
+@media screen and (max-width: 991px){
 	.team-back{
 		margin-top: 10% !important; 
 	}
