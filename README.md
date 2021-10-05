@@ -1,3 +1,3 @@
-# Site-vitrine de iTeam-$
+# Site web de iTeam-$
 
-Consultable sur iteam-s.github.io mais récemment déplacer sur iteam-s.mg pour des raisons technologiques.
+Consultable sur iteam-s.github.io mais bientôt sur iteam-s.mg .
