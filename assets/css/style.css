@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .equip-dig{
   margin-bottom: 9% !important;
+  font-size: 16px !important;
 }
 
 
@@ -113,9 +114,9 @@ h1, h2, h3, h4, h5, h6 {
 .fa-chevron-right{
   color:#ffffff;
   background-color: #057885;
-  padding:25px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding:18px;
+  padding-left: 21px;
+  padding-right: 21px;
   border-radius: 50px;
 }
 
@@ -541,12 +542,12 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
 }
 
 #com .btn-project {
-  font-weight: 500;
-  font-size: 14px;
+  /* font-weight: 500; */
+  font-size: 13px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px;
-  border-radius: 5px;
+  border-radius: 0px;
   transition: 0.5s;
   margin-top: 30px;
   color: #fff;
