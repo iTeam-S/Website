@@ -543,14 +543,14 @@ background: /*linear-gradient(45deg, rgba(86, 58, 250, 0.9) 0%, rgba(116, 15, 21
 
 #com .btn-project {
   /* font-weight: 500; */
-  font-size: 13px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 28px;
-  border-radius: 0px;
-  transition: 0.5s;
-  margin-top: 30px;
-  color: #fff;
+  font-size: 13px !important;
+  letter-spacing: 1px !important;
+  display: inline-block !important;
+  padding: 10px 28px !important;
+  border-radius: 0px !important;
+  transition: 0.5s !important;
+  margin-top: 30px !important;
+  color: #fff !important;
   background: linear-gradient(to left, #057885, #5846f9) !important;
 }
 
@@ -1543,4 +1543,9 @@ float : right;
 
 .our-services{
   color: rgba(255, 255, 255, 0.8);;
+}
+
+
+.no-border {
+  border: none !important;
 }
