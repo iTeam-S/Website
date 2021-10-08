@@ -1075,6 +1075,7 @@ section {
   border-radius: 5px;
   font-family: Poppins;
   transition-duration: 1s !important;
+  border: none !important;
  ;
 }
 
@@ -1560,4 +1561,9 @@ float : right;
   padding: 10px !important;
   border-radius: 20px !important;
   color: white !important;
+}
+
+
+.text-bl {
+  color:#434647 !important;
 }
