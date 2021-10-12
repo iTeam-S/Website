@@ -953,6 +953,7 @@ section {
 /*--------------------------------------------------------------
 # Section Projects
 --------------------------------------------------------------*/
+
 .project-card {
   max-width: 250px !important;
   background-color: #FFF;
@@ -1021,7 +1022,7 @@ section {
 
 .project-card:hover img {
   transition-duration: 1s;
-  transform:scale(1.5) !important;
+  transform:scale(1) !important;
 }
 
 .project-name{
