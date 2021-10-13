@@ -78,51 +78,16 @@
           <span v-for="m in dt.missions" style="text-align:left">{{m.mission}}</span>
         </div> -->
 
-        <div class="col-xl-3 col-sm-3 mb-3">
-          <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-              <h6 title="" class="mb-0">Landry</h6><span>Président CA</span>
+        <div v-for= "membre in data" class="col-xl-3 col-sm-3 mb-3">
+          <div class="bg-white rounded shadow-sm py-2 px-2"><img v-bind:src="membre.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
+              <h6 title="" class="mb-0">{{ membre.prenom_usuel }}</h6><span>{{ membre.nom_poste }}</span>
               <ul class="social mb-0 list-inline mt-3">
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
+                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://facebook.com',membre.facebook)" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
+                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://www.linkedin.com/in',membre.linkedin)" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
+                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://github.com/',membre.user_github)" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
               </ul>
           </div>
         </div><!-- End -->
-
-        <div class="col-xl-3 col-sm-3 mb-3">
-          <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-              <h6 title="" class="mb-0">Landry</h6><span>Président CA</span>
-              <ul class="social mb-0 list-inline mt-3">
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
-             
-              </ul>
-          </div>
-        </div><!-- End -->
-
-        <div class="col-xl-3 col-sm-3 mb-3">
-          <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-              <h6 title="" class="mb-0">Landry</h6><span>Président CA</span>
-              <ul class="social mb-0 list-inline mt-3">
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
-              </ul>
-          </div>
-        </div><!-- End -->
-
-        <div class="col-xl-3 col-sm-3 mb-3">
-          <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-              <h6 title="" class="mb-0">Landry</h6><span>Président CA</span>
-              <ul class="social mb-0 list-inline mt-3">
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
-                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
-              </ul>
-          </div>
-        </div><!-- End -->
-                  
 
       </div>
     </div>
@@ -130,7 +95,6 @@
   </div> 
 
 </section>
-
 
 <section class="s_text_image o_colored_level pt104 pb168" data-snippet="s_text_image" data-name="Text - Image">
   <div class="container">
@@ -257,13 +221,12 @@
       },
       methods: {
         async getData () {
-          const res = await fetch('https://iteam-s.gaetanbot.xyz/membres');
+          const res = await fetch('https://api.iteam-s.mg/api/membre/list');
           const data = await res.json();
           this.data = data;
         },
-        facebook (lien) {
-          let url ="https://facebook.com";
-          return url + lien;        
+         reseau_sociaux (url, lien) {
+            return url + lien;        
          }
        }
     })
