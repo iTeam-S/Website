@@ -70,34 +70,66 @@
 
 
 <section id="team" class="team">
-<div v-for="dt in data" class="container-fluid">
-<div class="text-center">
-  <div class="row">
-    <div class="col-md-4"  style=" border-left: 4px solid #4d4dff; height: 230px; display: inline-block;">
+  <div class="container-fluid">
+    <div class="text-center">
+      <div class="row">
+        <!-- <div class="col-md-4"  style=" border-left: 4px solid #4d4dff; height: 230px; display: inline-block;"> -->
 
-      <!-- ======= EQUIPE UI/UX Section ======= -->
-      <h4>{{dt.nom}}</h4>
-      <span v-for="m in dt.missions" style="text-align:left">{{m.mission}}</span>
-    </div>
+          <!-- ======= EQUIPE UI/UX Section ======= -->
+          <!-- <h4>{{dt.nom}}</h4>
+          <span v-for="m in dt.missions" style="text-align:left">{{m.mission}}</span>
+        </div> -->
 
-    <div v-for="(l, idx) in dt.membres" class="col-xl-2 col-sm-2 mb-2" :class="{'offset-md-4' : idx%4==0 && idx!=0}">
-      <div class="bg-white rounded shadow-sm py-2 px-2"><img v-bind:src="l.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-          <h6 v-bind:title="l.nom_complet" class="mb-0">{{l.prenom_usuel}}</h6><span>{{l.nom_poste}}</span>
-          <ul class="social mb-0 list-inline mt-3">
-            <li class="list-inline-item"><a v-bind:href="facebook(l.facebook)" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
-              <li class="list-inline-item"><a v-bind:href="l.Linkedin" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>                 
-          </ul>
+        <div class="col-xl-3 col-sm-3 mb-3">
+          <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
+              <h6 title="" class="mb-0">Landry</h6><span>Président CA</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
+              </ul>
+          </div>
+        </div><!-- End -->
+
+        <div class="col-xl-3 col-sm-3 mb-3">
+          <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
+              <h6 title="" class="mb-0">Landry</h6><span>Président CA</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
+             
+              </ul>
+          </div>
+        </div><!-- End -->
+
+        <div class="col-xl-3 col-sm-3 mb-3">
+          <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
+              <h6 title="" class="mb-0">Landry</h6><span>Président CA</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
+              </ul>
+          </div>
+        </div><!-- End -->
+
+        <div class="col-xl-3 col-sm-3 mb-3">
+          <div class="bg-white rounded shadow-sm py-2 px-2"><img src="../assets/img/team/UI/team-1.jpg" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
+              <h6 title="" class="mb-0">Landry</h6><span>Président CA</span>
+              <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
+                <li class="list-inline-item"><a href="" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
+              </ul>
+          </div>
+        </div><!-- End -->
+                  
+
       </div>
-    </div><!-- End -->
-              
-
-       </div>
     </div>
-    <br><br><br><br>
- </div>  <!-- =======END EQUIPE UI/UX Section ======= -->
 
-
-
+  </div> 
 
 </section>
   
