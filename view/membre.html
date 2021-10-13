@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body class="body">
 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top ">
@@ -65,6 +65,10 @@
   </div>
 </section><!-- End Com -->
 
+<!-- ======= Projets Section ======= -->
+<div class="menuprojets">
+  <a href="#" class="under">Tous les membres</a>
+</div>
 
 <!-- ======= Team Section ======= -->
 <section id="team" class="team">
@@ -78,13 +82,13 @@
           <span v-for="m in dt.missions" style="text-align:left">{{m.mission}}</span>
         </div> -->
 
-        <div v-for= "membre in data" class="col-xl-3 col-sm-3 mb-3">
-          <div class="bg-white rounded shadow-sm py-2 px-2"><img v-bind:src="membre.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
+        <div v-for= "membre in data" class="col-xl-2 col-sm-2 mb-2">
+          <div class="bg-white rounded py-2 px-2 no-border mgt"><img v-bind:src="membre.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
               <h6 title="" class="mb-0">{{ membre.prenom_usuel }}</h6><span>{{ membre.nom_poste }}</span>
               <ul class="social mb-0 list-inline mt-3">
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://facebook.com',membre.facebook)" target="_blank" class="social-link"><i class="icofont-facebook"></i></a></li>
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://www.linkedin.com/in',membre.linkedin)" target="_blank" class="social-link"><i class="icofont-linkedin"></i></a></li>   
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://github.com/',membre.user_github)" target="_blank" class="social-link"><i class="icofont-github"></i></a></li>                 
+                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://facebook.com',membre.facebook)" target="_blank" class="social-link"><i class="bx bxl-facebook"></i></a></li>
+                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://www.linkedin.com/in',membre.linkedin)" target="_blank" class="social-link"><i class="bx bxl-linkedin"></i></a></li>   
+                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://github.com/',membre.user_github)" target="_blank" class="social-link"><i class="bx bxl-github"></i></a></li>                 
               </ul>
           </div>
         </div><!-- End -->
@@ -95,6 +99,11 @@
   </div> 
 
 </section>
+
+<!-- ======= Projets Section ======= -->
+<div class="participations">
+  <a href="#" class="under">Participations</a>
+</div>
 
 <section class="s_text_image o_colored_level pt104 pb168" data-snippet="s_text_image" data-name="Text - Image">
   <div class="container">
@@ -187,7 +196,7 @@
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
         <a href="https://web.facebook.com/iTeam.Community" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="https://github.com/iTeam-S" class="github"><i class="bx bxl-github"></i></a>
-        <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+        <a href="https://www.linkedin.com/company/iteamscommunity" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
     </div>
 
