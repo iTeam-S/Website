@@ -1048,7 +1048,7 @@ section {
     position: relative;    
 }
 
-.menuprojets a{
+.menuprojets p{
   position: relative;
   margin: 0 20px;
   font-size: 14px;
@@ -1583,7 +1583,7 @@ float : right;
   position: relative;    
 }
 
-.participations a{
+.participations p{
   position: relative;
   margin: 0 20px;
   font-size: 14px;
