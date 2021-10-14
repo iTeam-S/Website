@@ -1595,3 +1595,13 @@ float : right;
 .mgt {
   margin-top: 5% !important;
 }
+
+.radius {
+  border-radius: 10px !important;
+}
+
+.text-img{
+  background-color: #fff !important;
+  border-radius: 20px !important;
+  padding: 25px !important;
+}
