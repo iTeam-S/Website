@@ -84,7 +84,7 @@
 
         <div v-for= "membre in data" class="col-xl-2 col-sm-2 mb-2">
           <div class="bg-white rounded py-2 px-2 no-border mgt"><img v-bind:src="membre.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-              <h6 v-bind:title="membre.fullname" class="mb-0"><a v-bind:href="reseau_sociaux('https://portfolio.iteam-s.mg?u=',membre.prenom_usuel)" target="_blank" style="color: #666">{{ membre.prenom_usuel }}</a></h6><span>{{ membre.nom_poste }}</span>
+              <a v-bind:href="reseau_sociaux('https://portfolio.iteam-s.mg?u=',membre.prenom_usuel)"><h6 v-bind:title="membre.fullname" class="mb-0">{{ membre.prenom_usuel }}</h6></a><span>{{ membre.nom_poste }}</span>
               <ul class="social mb-0 list-inline mt-3">
                 <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://facebook.com',membre.facebook)" target="_blank" class="social-link"><i class="bx bxl-facebook"></i></a></li>
                 <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://www.linkedin.com/in',membre.linkedin)" target="_blank" class="social-link"><i class="bx bxl-linkedin"></i></a></li>   
@@ -177,7 +177,7 @@
         <div class="col-lg-4 col-md-6 footer-newsletter">
           <h4>Réjoignez notre Newsletter</h4>
           <p>Recevoir continuellement des informations concernant la communauté</p>
-          <form method="post">
+          <form>
             <input type="email" name="email"><input type="submit" value="S'inscrire">
           </form>
         </div>
