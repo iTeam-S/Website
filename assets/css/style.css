@@ -1618,11 +1618,13 @@ float : right;
 }
 
 .radius {
-  border-radius: 10px !important;
+  border-radius: 5px !important;
+  border: 10px solid #c4ebf0;
 }
 
 .text-img{
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
   border-radius: 15px !important;
-  padding: 25px !important;
+  /* padding: 25px !important; */
+  /* width: 60% !important; */
 }

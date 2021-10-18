@@ -38,8 +38,8 @@
           <ul>
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="projet.html">Projets</a></li>
-            <li class="active"><a href="membre.html">Qui sommes-nous</a></li>
-            <li><a href="actualite.html">Actualités</a></li>
+            <li><a href="membre.html">Qui sommes-nous</a></li>
+            <li class="active" ><a href="actualite.html">Actualités</a></li>
           </ul>
         </nav><!-- .nav-menu -->
         <a href="../index.html#contact" class="join-btn ">Nous contacter</a>
@@ -55,8 +55,8 @@
     <div class="container-fluid" data-aos="fade-up">
       <div class="row justify-content-center">
         <div class="col-xl-9 col-lg-4 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 style="position: relative; top: 20%;">Qui sommes nous?</h1>
-          <h2 style="position: relative; top: 30%; font-size: 16px; line-height: 30px;"> La communauté compte actuellement près de 21 membres actifs et motivés. Vous pouvez aussi nous rejoindre.</h2>
+          <h1 style="position: relative; top: 20%;">Actualités</h1>
+          <h2 style="position: relative; top: 30%; font-size: 16px; line-height: 30px;"> iTeam-$ est une communauté très actif. Elle recherche toujours des idées nouvelles pour des projets internes et participe à des concours.</h2>
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 com-img" data-aos="zoom-in" data-aos-delay="150">
           <img src="assets/img/hero-img_1.png" class="img-fluid animated" alt="">
@@ -66,44 +66,45 @@
   </div>
 </section><!-- End Com -->
 
-<div class="menuprojets">
-  <p class="under">Tous les membres</a>
+
+<!-- ======= Actualités Section ======= -->
+<div class="participations">
+  <p class="under">Actualités de la communauté</p>
 </div>
 
-<!-- ======= Team Section ======= -->
-<section id="team" class="team">
-  <div class="container-fluid">
-    <div class="text-center">
-      <div class="row">
-        <!-- <div class="col-md-4"  style=" border-left: 4px solid #4d4dff; height: 230px; display: inline-block;"> -->
-
-          <!-- ======= EQUIPE UI/UX Section ======= -->
-          <!-- <h4>{{dt.nom}}</h4>
-          <span v-for="m in dt.missions" style="text-align:left">{{m.mission}}</span>
-        </div> -->
-
-        <div v-for= "membre in data" class="col-xl-2 col-sm-2 mb-2">
-          <div class="bg-white rounded py-2 px-2 no-border mgt"><img v-bind:src="membre.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-              <a v-bind:href="reseau_sociaux('https://portfolio.iteam-s.mg?u=',membre.prenom_usuel)"><h6 v-bind:title="membre.fullname" class="mb-0">{{ membre.prenom_usuel }}</h6></a><span>{{ membre.nom_poste }}</span>
-              <ul class="social mb-0 list-inline mt-3">
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://facebook.com',membre.facebook)" target="_blank" class="social-link"><i class="bx bxl-facebook"></i></a></li>
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://www.linkedin.com/in',membre.linkedin)" target="_blank" class="social-link"><i class="bx bxl-linkedin"></i></a></li>   
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://github.com/',membre.user_github)" target="_blank" class="social-link"><i class="bx bxl-github"></i></a></li>  
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://portfolio.iteam-s.mg?u=',membre.prenom_usuel)" target="_blank" class="social-portfolio"><i class="bx bx-globe"></i></a></li>                
-              </ul>
-          </div>
-        </div><!-- End -->
-
+<section class="s_text_image o_colored_level pt104 pb168" data-snippet="s_text_image" data-name="Text - Image">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="pt16 pb16 col-lg-7 o_colored_level ">
+        <img src="../assets/img/webcup.jpg" class="img img-fluid mx-auto radius" alt="" loading="lazy" data-original-id="288" data-original-src="assets/img/open.jpg" data-original-title="" title="" aria-describedby="tooltip949152">
+      </div>
+      <div class="pt16 pb16 col-lg-5 o_colored_level text-img">
+        <h2>Webcup 2021</h2>
+        <p class="text-dom">La commanuté iTeam-$ a participée à la Webcup 2021 qui s'est déroulée en ligne. Malgré la jeunesse de la communauté, ses représentants ont su s'organiser et donner le meilleur d'eux-même. </p>
       </div>
     </div>
+  </div>
+</section>
 
-  </div> 
 
+<section class="s_text_image o_colored_level pt104 pb168 text-img" data-snippet="s_text_image" data-name="Text - Image">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="pt16 pb16 col-lg-5 o_colored_level">
+        <h2>1ère place Hachathon MYBN</h2>
+        <p class="text-dom">La commanuté iTeam-$ a participée à l'hackathon pour créer une bibliothèque numérique. Sesreprésentants ont su s'organiser et donner le meilleur d'eux-même pour decrocher la prémière place. </p>
+      </div>
+      <div class="pt16 pb16 col-lg-7 o_colored_level">
+        <img src="../assets/img/mybn.jpg" class="img img-fluid mx-auto radius" alt="" loading="lazy" data-original-id="288" data-original-src="assets/img/open.jpg" data-original-title="" title="" aria-describedby="tooltip949152">
+      </div>
+    </div>
+  </div>
 </section>
   
 
+
 <!-- ======= Footer ======= -->
-<footer id="footer" style="margin-top: 6%;">
+<footer id="footer">
 
   <div class="footer-top ">
     <div class="container">
