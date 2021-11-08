@@ -1,3 +1,5 @@
 # Site web de iTeam-$
 
-Consultable sur iteam-s.github.io mais aussi sur iteam-s.mg (version officielle) .
+Consultable sur 
+  - https://iteam-s.github.io/Website (version `DEV`)
+  - https://iteam-s.mg (version `PROD`) 
