@@ -50,14 +50,15 @@
    
 
 <!-- ======= Com Section ======= -->
-<section id="appVue">
-    <section id="com_custom_membre" class="d-flex align-items-center">
+
+<div id="app">
+  <section id="com_custom_membre" class="d-flex align-items-center">
     <div class="bgmembre">
       <div class="container-fluid" data-aos="fade-up">
         <div class="row justify-content-center">
           <div class="col-xl-9 col-lg-4 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h1 style="position: relative; top: 20%;">Qui sommes nous?</h1>
-            <h2 style="position: relative; top: 30%; font-size: 16px; line-height: 30px;"> La communauté compte actuellement près de {{ data.length }} membres actifs et motivés. Vous pouvez aussi nous rejoindre.</h2>
+            <h2 style="position: relative; top: 30%; font-size: 16px; line-height: 30px;"> La communauté compte actuellement près de {{ data.length}} membres actifs et motivés. Vous pouvez aussi nous rejoindre.</h2>
           </div>
           <div class="col-xl-4 col-lg-6 order-1 order-lg-2 com-img" data-aos="zoom-in" data-aos-delay="150">
             <img src="assets/img/hero-img_1.png" class="img-fluid animated" alt="">
@@ -100,7 +101,7 @@
     </div> 
 
   </section>
-</section>
+</div>
   
 
 <!-- ======= Footer ======= -->
@@ -189,7 +190,7 @@
   <script>
     var app = new Vue(
     {
-      el: '#appVue',
+      el: '#app',
       data (){
           return { data: null }
       },
