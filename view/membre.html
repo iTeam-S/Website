@@ -50,58 +50,56 @@
    
 
 <!-- ======= Com Section ======= -->
-<section id="com_custom_membre" class="d-flex align-items-center">
-  <div class="bgmembre">
-    <div class="container-fluid" data-aos="fade-up">
-      <div class="row justify-content-center">
-        <div class="col-xl-9 col-lg-4 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 style="position: relative; top: 20%;">Qui sommes nous?</h1>
-          <section class="w-50">
-          <h2 style="position: relative; top: 30%; font-size: 16px; line-height: 30px;"> iTeam-$ est une communauté composée de jeunes Malagasy oeuvrant principalement dans le domaine des NTIC.
-            Nos membres apportent une grande diversité de compétences couplée de fortes expériences dans leurs domaines spécifiques</h2>
-          </section>
+<section id="appVue">
+    <section id="com_custom_membre" class="d-flex align-items-center">
+    <div class="bgmembre">
+      <div class="container-fluid" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-xl-9 col-lg-4 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h1 style="position: relative; top: 20%;">Qui sommes nous?</h1>
+            <h2 style="position: relative; top: 30%; font-size: 16px; line-height: 30px;"> La communauté compte actuellement près de {{ data.length }} membres actifs et motivés. Vous pouvez aussi nous rejoindre.</h2>
           </div>
           <div class="col-xl-4 col-lg-6 order-1 order-lg-2 com-img" data-aos="zoom-in" data-aos-delay="150">
             <img src="assets/img/hero-img_1.png" class="img-fluid animated" alt="">
           </div>
-      </div>
+        </div>
     </div>
+  </section><!-- End Com -->
+
+  <div class="menuprojets">
+    <p class="under">Tous les membres</a>
   </div>
-</section><!-- End Com -->
 
-<div class="menuprojets">
-  <p class="under">Tous les membres</a>
-</div>
+  <!-- ======= Team Section ======= -->
+  <section id="team" class="team">
+    <div class="container-fluid">
+      <div class="text-center">
+        <div class="row">
+          <!-- <div class="col-md-4"  style=" border-left: 4px solid #4d4dff; height: 230px; display: inline-block;"> -->
 
-<!-- ======= Team Section ======= -->
-<section id="team" class="team">
-  <div class="container-fluid">
-    <div class="text-center">
-      <div class="row">
-        <!-- <div class="col-md-4"  style=" border-left: 4px solid #4d4dff; height: 230px; display: inline-block;"> -->
+            <!-- ======= EQUIPE UI/UX Section ======= -->
+            <!-- <h4>{{dt.nom}}</h4>
+            <span v-for="m in dt.missions" style="text-align:left">{{m.mission}}</span>
+          </div> -->
 
-          <!-- ======= EQUIPE UI/UX Section ======= -->
-          <!-- <h4>{{dt.nom}}</h4>
-          <span v-for="m in dt.missions" style="text-align:left">{{m.mission}}</span>
-        </div> -->
+          <div v-for= "membre in data" class="col-xl-2 col-sm-2 mb-2">
+            <div class="bg-white rounded py-2 px-2 no-border mgt"><img v-bind:src="membre.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
+                <a v-bind:href="reseau_sociaux('https://portfolio.iteam-s.mg?u=',membre.prenom_usuel)"><h6 v-bind:title="membre.fullname" class="mb-0">{{ membre.prenom_usuel }}</h6></a><span>{{ membre.nom_poste }}</span>
+                <ul class="social mb-0 list-inline mt-3">
+                  <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://facebook.com',membre.facebook)" target="_blank" class="social-link"><i class="bx bxl-facebook"></i></a></li>
+                  <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://www.linkedin.com/in',membre.linkedin)" target="_blank" class="social-link"><i class="bx bxl-linkedin"></i></a></li>   
+                  <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://github.com/',membre.user_github)" target="_blank" class="social-link"><i class="bx bxl-github"></i></a></li>  
+                  <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://portfolio.iteam-s.mg?u=',membre.prenom_usuel)" target="_blank" class="social-portfolio"><i class="bx bx-globe"></i></a></li>                
+                </ul>
+            </div>
+          </div><!-- End -->
 
-        <div v-for= "membre in data" class="col-xl-2 col-sm-2 mb-2">
-          <div class="bg-white rounded py-2 px-2 no-border mgt"><img v-bind:src="membre.user_github_pic" alt="" width="80" class="img-fluid rounded-circle mb-2 img-thumbnail shadow-sm">
-              <a v-bind:href="reseau_sociaux('https://portfolio.iteam-s.mg?u=',membre.prenom_usuel)"><h6 v-bind:title="membre.fullname" class="mb-0">{{ membre.prenom_usuel }}</h6></a><span>{{ membre.nom_poste }}</span>
-              <ul class="social mb-0 list-inline mt-3">
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://facebook.com',membre.facebook)" target="_blank" class="social-link"><i class="bx bxl-facebook"></i></a></li>
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://www.linkedin.com/in',membre.linkedin)" target="_blank" class="social-link"><i class="bx bxl-linkedin"></i></a></li>   
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://github.com/',membre.user_github)" target="_blank" class="social-link"><i class="bx bxl-github"></i></a></li>  
-                <li class="list-inline-item"><a v-bind:href="reseau_sociaux('https://portfolio.iteam-s.mg?u=',membre.prenom_usuel)" target="_blank" class="social-portfolio"><i class="bx bx-globe"></i></a></li>                
-              </ul>
-          </div>
-        </div><!-- End -->
-
+        </div>
       </div>
-    </div>
 
-  </div> 
+    </div> 
 
+  </section>
 </section>
   
 
@@ -191,7 +189,7 @@
   <script>
     var app = new Vue(
     {
-      el: '#team',
+      el: '#appVue',
       data (){
           return { data: null }
       },
