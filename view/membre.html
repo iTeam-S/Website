@@ -204,6 +204,7 @@
           this.data = data;
         },
          reseau_sociaux (url, lien) {
+            if (lien == null) return "#"
             return url + lien;        
          }
        }
