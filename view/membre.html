@@ -174,51 +174,60 @@
                         <a href="https://www.linkedin.com/company/iteamscommunity" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                     </div>
                 </div>
+    <div class="copyright-wrap d-md-flex py-4">
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>iTeam-$</span></strong>. Tout droits reservés
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://web.facebook.com/iTeam.Community" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://github.com/iTeam-S" class="github"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/company/iteamscommunity" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
 
-            </div>
-        </footer>
-        <!-- End Footer -->
+  </div>
+</footer><!-- End Footer -->
+ 
 
-
-        <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-        <div id="preloader"></div>
-
-
-        <script src="../assets/vendor/jquery/jquery.min.js"></script>
-        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="../assets/vendor/counterup/counterup.min.js"></script>
-        <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-        <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="../assets/vendor/venobox/venobox.min.js"></script>
-        <script src="../assets/vendor/aos/aos.js"></script>
-        <script src="../assets/js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-        <script>
-            var app = new Vue({
-                el: '#app',
-                data() {
-                    return {
-                        data: null
-                    }
-                },
-                beforeMount() {
-                    this.getData();
-                },
-                methods: {
-                    async getData() {
-                        const res = await fetch('https://api.iteam-s.mg/api/membre/list');
-                        const data = await res.json();
-                        this.data = data;
-                    },
-                    reseau_sociaux(url, lien) {
-                        return url + lien;
-                    }
-                }
-            })
-        </script>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <div id="preloader"></div>
 
 
+  <script src="../assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/venobox/venobox.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script>
+    var app = new Vue(
+    {
+      el: '#app',
+      data (){
+          return { data: null }
+      },
+      beforeMount(){
+        this.getData();
+      },
+      methods: {
+        async getData () {
+          const res = await fetch('https://api.iteam-s.mg/api/membre/list');
+          const data = await res.json();
+          this.data = data;
+        },
+         reseau_sociaux (url, lien) {
+            if (lien == null) return "#"
+            return url + lien;        
+         }
+       }
+    })
+  </script>
 </body>
 
 </html>
