@@ -197,8 +197,6 @@
                     const res = await fetch('https://api.iteam-s.mg/api/projet');
                     const donnees = await res.json();
                     this.data = Object.values(donnees);
-                    console.log(donnees);
-                    console.table(this.data);
                 }
             }
         })
